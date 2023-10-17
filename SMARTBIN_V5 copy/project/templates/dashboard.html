@@ -1,0 +1,18 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="title">Guldbergsgade</h1>
+
+    <button id="createButton" onclick="createTrashBinVisualizer()">Create Smart Bin</button>
+    
+    <section id="section3">
+
+        <div id="visualizerContainer"></div>
+        
+        <script src="../static/dashboard.js"></script>
+    </section>
+
+    <button id="editButton" onclick="toggleFormButtons()">Edit</button>
+{% endblock %}

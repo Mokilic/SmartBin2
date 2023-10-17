@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="section3">
+  <h1 class="title">Device List Configuration</h1>
+  
+  <form id="deviceForm">
+    <label for="deviceID">Device ID</label>
+    <input type="text" id="deviceID" name="deviceID"><br><br>
+  
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address"><br><br>
+    
+  </form>
+  <button id="addDevice" type="submit" onclick="addDevice(event)">Add Device</button>
+  
+  <h4>Existing Configurations</h4>
+  <table id="deviceTable">
+    <tr>
+      <th>Device ID</th>
+      <th>Address</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <!-- The existing configurations will be populated here -->
+  </table>
+  </div>
+  
+  <script src="../static/main.js"></script>
+</section>
+{% endblock %}

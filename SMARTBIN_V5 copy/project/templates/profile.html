@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+<div class="address-container">
+  <div class="address-wrapper">
+    <a href="#">Frederiksberg Alle</a>
+    <div class="progress-bar">
+      <div class="progress1"></div>
+    </div>
+  </div>
+
+  <div class="address-wrapper">
+    <a href="{{ url_for('main.dashboard') }}">Guldbergsgade</a>
+    <div class="progress-bar">
+      <div class="progress2"></div>
+    </div>
+  </div>
+
+  <div class="address-wrapper">
+    <a href="#">Nørre Voldgade</a>
+    <div class="progress-bar">
+      <div class="progress3"></div>
+    </div>
+  </div>
+
+  <div class="address-wrapper">
+    <a href="#">Østerbrogade</a>
+    <div class="progress-bar">
+      <div class="progress4"></div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
